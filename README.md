@@ -1,0 +1,1 @@
+# demo-akka-clustersharding
