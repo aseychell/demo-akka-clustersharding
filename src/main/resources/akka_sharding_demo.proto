@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package com.ixaris.demo.akkasharding;
+
+option optimize_for = SPEED;
+
+message CounterOp {
+    enum Type {
+        INCREMENT = 0;
+        DECREMENT = 1;
+    }
+
+    int64 id = 1;
+    Type type = 2;
+}
+
+message CounterChangedEvent {
+    int64 delta = 1;
+}
+
+message GetCounter {
+    int64 id = 1;
+}
+
+message Counter {
+    int64 id = 1;
+    int64 value = 2;
+}
