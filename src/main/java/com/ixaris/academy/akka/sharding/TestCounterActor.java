@@ -1,4 +1,4 @@
-package com.ixaris.poc.akka.sharding;
+package com.ixaris.academy.akka.sharding;
 
 import java.util.Random;
 

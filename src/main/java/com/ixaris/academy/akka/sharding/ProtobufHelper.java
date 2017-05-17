@@ -1,4 +1,4 @@
-package com.ixaris.poc.akka.sharding;
+package com.ixaris.academy.akka.sharding;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.MessageOrBuilder;

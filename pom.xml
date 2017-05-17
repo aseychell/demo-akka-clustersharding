@@ -24,9 +24,14 @@
             <version>${akka.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-cluster_2.11</artifactId>
+            <version>${akka.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
-            <version>1.4.2.RELEASE</version>
+            <version>1.5.3.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.google.protobuf</groupId>
@@ -41,6 +46,7 @@
     </dependencies>
 
     <build>
+        <finalName>akka-sharding-demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -51,6 +57,21 @@
                     <target>${maven.compiler.target}</target>
                     <compilerArgument>-proc:none</compilerArgument>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.5.3.RELEASE</version>
+                <configuration>
+                    <mainClass>com.ixaris.academy.akka.sharding.ShardingDemoApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <extensions>
@@ -89,7 +110,7 @@
                                 </goals>
                                 <configuration>
                                     <protoSourceRoot>${project.basedir}/src/main/resources</protoSourceRoot>
-                                    <protocArtifact>com.google.protobuf:protoc:3.0.0:exe:${os.detected.classifier}</protocArtifact>
+                                    <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
                                     <outputDirectory>${project.build.directory}/generated-sources/protobuf</outputDirectory>
                                 </configuration>
                             </execution>

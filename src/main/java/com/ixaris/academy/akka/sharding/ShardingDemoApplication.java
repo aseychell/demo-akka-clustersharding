@@ -1,4 +1,4 @@
-package com.ixaris.poc.akka.sharding;
+package com.ixaris.academy.akka.sharding;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ import akka.pattern.PatternsCS;
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
 
-public class ShardingPocApplication {
+public class ShardingDemoApplication {
 
     public static final String ACTOR_SYSTEM_NAME = "sharding-demo";
 
