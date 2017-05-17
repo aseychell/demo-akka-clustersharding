@@ -47,6 +47,8 @@ public class TestCounterActor extends AbstractActor {
         for (int i = 0; i < 10; i++) {
             counterShardRegion.tell(GetCounter.newBuilder().setId(i).build(), self());
         }
+
+        context().stop(self());
     }
 
 }
