@@ -16,7 +16,7 @@ Use the scripts `start-seed.bat` and `start-normal-node.bat` in that order to st
 
 After startup is complete, you can use the following lines in the command line:
 
-`inc <counter_id>` to increment a counter with the specified id
-`dec <counter_id>` to decrement a counter with the specified id
-`get <counter_id>` to query a counter with the specified id
-`testData` to issue a number of random requests on random counters
+- `inc <counter_id>` to increment a counter with the specified id
+- `dec <counter_id>` to decrement a counter with the specified id
+- `get <counter_id>` to query a counter with the specified id
+- `testData` to issue a number of random requests on random counters
