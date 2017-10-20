@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.ixaris.demo.akka.cluster;
+
+option optimize_for = SPEED;
+
+message ExampleMessage {
+    string message = 1;
+}
+
+message Ack { }

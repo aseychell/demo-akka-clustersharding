@@ -1,6 +1,6 @@
 package com.ixaris.academy.akka;
 
-import com.ixaris.academy.akka.cluster.ClusterDemo;
+import com.ixaris.academy.akka.cluster.ClusterSingletonDemo;
 import com.ixaris.academy.akka.sharding.ShardingDemo;
 
 /**
@@ -18,7 +18,7 @@ public class Launcher {
                 ShardingDemo.main(args);
                 break;
             case "cluster" :
-                ClusterDemo.main(args);
+                ClusterSingletonDemo.main(args);
                 break;
             default:
                 System.out.printf("Mode [%s] not supported", args[0]);
