@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.MessageOrBuilder;
 
+import com.ixaris.academy.akka.utils.ProtobufHelper;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo.CounterOp;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo.CounterOp.Type;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo.GetCounter;
@@ -21,7 +22,7 @@ import akka.pattern.PatternsCS;
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
 
-public class ShardingDemoApplication {
+public class ShardingDemo {
     
     public static final String ACTOR_SYSTEM_NAME = "sharding-demo";
 

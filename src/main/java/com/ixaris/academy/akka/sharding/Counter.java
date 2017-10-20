@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.MessageOrBuilder;
+import com.ixaris.academy.akka.utils.ProtobufHelper;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo.CounterChangedEvent;
 import com.ixaris.demo.akkasharding.AkkaShardingDemo.CounterOp;
